@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Assets/parchment1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+p{
+    font-size: 26pt;
+}
+#highlight{
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+.one{font-family: 'Great Vibes', cursive;}
+.two{font-family: 'Parisienne', cursive;}
+.three{font-family: 'Pirata One', cursive;}
+.four{font-family: 'Homemade Apple', cursive;}
+.five{font-family: 'Marck Script', cursive;}
+.six{font-family: 'Tangerine', cursive;}
+.seven{font-family: 'Alex Brush', cursive;}
+.eight{font-family: 'Mr Dafoe', cursive;}
+.nine{font-family: 'Mrs Saint Delafield', cursive;}
+.ten{font-family: 'Rock Salt', cursive;}
+.eleven{font-family: 'Schoolbell', cursive;}
+.twelve{font-family: 'Gloria Hallelujah', cursive;}

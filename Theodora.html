@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Navigation.css">
+    <link rel="stylesheet" href="TheodoraStyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <script src="MyJava.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <title>Theodora Character Sheet</title>
+  </head>
+<body>
+
+  
+    <div class="nav-menu">
+        <img src="Assets/mapicon.png" width="75px">
+        <div class="sub-nav-menu">
+            <ul>
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Theodora.html">Theodora</a></li>
+                <li><a href="Ulong.html">Ulong</a></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div id="topMenu">
+        <div class="icon"><img src="Assets/BurpaFull.png" onmouseover="this.src='Assets/BurpaHeadshot.png'" onmouseout="this.src='Assets/BurpaFull.png'"></div>
+        <div id="Info">
+            <article>
+                <p class="label">Name:</p>
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">Theodora</p>
+            </article>
+            <article>
+                <p class="label">Race: </p> 
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">Gnome</p>
+            </article>
+            <article>
+                <p class="label">Class:</p> 
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">Artificer</p>
+            </article>
+            <article>
+                <p class="label">Level:</p> 
+                <p class="inputNumber" style="font-family: 'Parisienne', cursive;">12</p>
+            </article>
+            <article>
+                <p class="label">Hitpoints:</p> 
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">167</p>
+            </article>
+            <article>
+                <p class="label">Gender:</p> 
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">Female</p>
+            </article>
+            <article>
+                <p class="label">Age:</p> 
+                <p class="inputNumber" style="font-family: 'Parisienne', cursive;">44</p>
+            </article>
+            <article>
+                <p class="label">Height:</p> 
+                <p class="inputNumber" style="font-family: 'Parisienne', cursive;">3'4</p>
+            </article>
+            <article>
+                <p class="label">Alignment:</p> 
+                <p class="inputWord" style="font-family: 'Parisienne', cursive;">Neutral Good</p>
+            </article>
+            <article>
+                <p class="label">Weight:</p> 
+                <p class="inputNumber" style="font-family: 'Parisienne', cursive;">44lbs</p>
+            </article>
+        </div>
+    </div>
+        <main>
+            <div id="DropUp">
+                <div id="tabsDashboard">
+                    <div id="absFull" class="full">
+                        <h1>Abilities</h1>
+                    <table>
+                        <tr>
+                        <td>Ability Name</td>
+                        <td>Ability Score</td>
+                        <td>Ability Modifier</td>
+                        <td>Temporary Score</td>
+                        <td>Temporary Modifier</td>
+                        </tr>
+                        <tr>
+                        <th>STR</th>
+                        <td>9</td>
+                        <td>-1</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                        <tr>
+                        <th>DEX</th>
+                        <td>14</td>
+                        <td>+2</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                        <tr>
+                        <th>CON</th>
+                        <td>18</td>
+                        <td>+4</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                        <tr>
+                        <th>INT</th>
+                        <td>20</td>
+                        <td>+5</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                        <tr>
+                        <th>WIS</th>
+                        <td>12</td>
+                        <td>+1</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                        <tr>
+                        <th>CHA</th>
+                        <td>10</td>
+                        <td>0</td>
+                        <td><input value=""></td>
+                        <td><input value=""></td>
+                        </tr>
+                    </table>
+                    </div>
+                    
+                    <div id="proFull" class="full">
+                        <h1>Proficiencies</h1>
+                    <table>
+                        <tr>
+                        <td>Proficient</td>
+                        <td>Saving Throws</td>
+                        <td>Total</td>
+                        <td>Base</td>
+                        <td>Ability</td>
+                        <td>Magic</td>
+                        <td>Misc</td>
+                        <td>Temporary</td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <th>Strength</th>
+                        <td>+4</td>
+                        <td>0</td>
+                        <td>+4</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <th>Dexterity</th>
+                        <td>+1</td>
+                        <td>0</td>
+                        <td>+1</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <th>Constitution</th>
+                        <td>+9</td>
+                        <td>+5</td>
+                        <td>+4</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                        <td><input type="checkbox" checked></td>
+                        <th>Intelligence</th>
+                        <td>+10</td>
+                        <td>+5</td>
+                        <td>+5</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <th>Wisdom</th>
+                        <td>+1</td>
+                        <td>0</td>
+                        <td>+1</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <th>Charisma</th>
+                        <td>+0</td>
+                        <td>0</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td>+0</td>
+                        <td><input type="text"></td>
+                        </tr>
+                    </table>
+                    </div>
+
+
+                    <div id="skillsFull" class="full">
+                        <h1>Skills</h1>
+                    <table>
+                        <tr>
+                        <th colspan="2">Skill Name</th>
+                        <th>Ability</th>
+                        <th>Skill Modifier</th>
+                        <th>Ability Modifier</th>
+                        <th>Proficiency Modifier</th>
+                        <th>Misc Modifier</th>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Acrobatics</td>
+                        <td>DEX</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Animal Handling</td>
+                        <td>WIS</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="leftAlignText">Arcana</td>
+                        <td>INT</td>
+                        <td>10  =</td>
+                        <td>5  +</td>
+                        <td>5  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Athletics</td>
+                        <td>STR</td>
+                        <td>4  =</td>
+                        <td>4  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Deception</td>
+                        <td>CHA</td>
+                        <td>0  =</td>
+                        <td>0  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="leftAlignText">History</td>
+                        <td>INT</td>
+                        <td>10  =</td>
+                        <td>5  +</td>
+                        <td>5  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Insight</td>
+                        <td>WIS</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Intimidation <td>CHA</td>
+                        <td>0  =</td>
+                        <td>0  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="leftAlignText">Investigation</td>
+                        <td>INT</td>
+                        <td>10  =</td>
+                        <td>5  +</td>
+                        <td>5  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Medicine</td>
+                        <td>WIS</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="leftAlignText">Nature</td>
+                        <td>INT</td>
+                        <td>10  =</td>
+                        <td>5  +</td>
+                        <td>5  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Perception</td>
+                        <td>WIS</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"><span class="checkmark"></span></td>
+                        <td class="leftAlignText">Performance</td>
+                        <td>CHA</td>
+                        <td>0  =</td>
+                        <td>0  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Persuasion</td>
+                        <td>CHA</td>
+                        <td>0  =</td>
+                        <td>0  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox" checked></td>
+                        <td class="leftAlignText">Religiion</td>
+                        <td>INT</td>
+                        <td>5  =</td>
+                        <td>5  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Sleight of Hand</td>
+                        <td>DEX</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Stealth</td>
+                        <td>DEX</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="leftAlignText">Survival</td>
+                        <td>WIS</td>
+                        <td>1  =</td>
+                        <td>1  +</td>
+                        <td>0  +</td>
+                        <td></td>
+                        </tr>
+                    </table>
+                    </div>
+
+                    <div id="inventoryFull" class="full">
+                        <h1>Inventory</h1>
+                        <div id="inventoryGrid">
+                            <table>
+                                <tr>
+                                <th rowspan="2"><h2>Mace</h2></th>
+                                <th>Hand</th>
+                                <th>Type</th>
+                                <th>Size</th>
+                                <th>Critical</th>
+                                <th>Reach</th>
+                                </tr>
+                                <tr>
+                                <td>Primary</td>
+                                <td>B</td>
+                                <td>S</td>
+                                <td>20/x2</td>
+                                <td>5ft.</td>
+                                </tr>
+                                <tr>
+                                <th>To Hit</th>
+                                <td>+11</td>
+                                <th colspan="3">Damage</th>
+                                <td>1d6+6</td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr>
+                                <th rowspan="2"><h2>Shortbow</h2></th>
+                                <th>Hand</th>
+                                <th>Type</th>
+                                <th>Size</th>
+                                <th>Critical</th>
+                                </tr>
+                                <tr>
+                                <td>Primary</td>
+                                <td>P</td>
+                                <td>S</td>
+                                <td>20/x0</td>
+                                </tr>
+                                <tr>
+                                <th>Range</th>
+                                <th colspan="2">80ft.*</th>
+                                <th colspan="2">320ft.*</th>
+                                </tr>
+                                <tr>
+                                <th>Bonus</th>
+                                <td colspan="2">+8</td>
+                                <td colspan="2">+8(Disadvantage)</td>
+                                </tr>
+                                <tr>
+                                <th>DAM</th>
+                                <td colspan="2">1d6+3</td>
+                                <td colspan="2">1d6+3</td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th rowspan="2" rowspan="2"><h2>Chain Shirt</h2></th>
+                                    <th>Type</th>
+                                    <th>Armor Bonus</th>
+                                    <th>Max Dex</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>+3</td>
+                                    <td>+2</td>
+                                </tr>
+                                <tr>
+                                    <th>Check Penalty</th>
+                                    <th>Spell Failure</th>
+                                    <th colspan="2">Special Properties</th>
+                                </tr>
+                                <tr>
+                                <td>+0</th>
+                                <td>0</td>
+                                <td colspan="2"></td>
+                                </tr>
+                                </table>
+
+                                <table>
+                                <tr>
+                                    <th rowspan="2" rowspan="2"><h2>Shield</h2></th>
+                                    <th>Type</th>
+                                    <th>Armor Bonus</th>
+                                </tr>
+                                <tr>
+                                    <td>Full</td>
+                                    <td>+2</td>
+                                </tr>
+                                    <th colspan="3">Special Properties</th>
+                                </tr>
+                                <tr>
+                                <td colspan="3">+2</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="spellsFull" class="full">
+                        <h1>Spells</h1>
+                    <div class="specQual">
+                    <h2>Special Qualities</h2>
+                    <h3>Race/Background</h3>
+
+                    <div class="dropdown">
+                    <span id="target">Darkvision</span>
+                    <div class="dropdown-content">
+                        <p>Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it w ere bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray. </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Artificer's Lore</span>
+                    <div class="dropdown-content">
+                        <p>  Whenever you make a History check related to magic items, alchemical objects, ar technological devices, you can add twice your proficiency bonus (10), instead of any proficiency bonus you normally </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Gnome Cunning</span>
+                    <div class="dropdown-content">
+                        <p>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic. </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Researcher</span>
+                    <div class="dropdown-content">
+                        <p>When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign. </p>
+                    </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                    <span>Languages</span>
+                    <div class="dropdown-content">
+                        <p>You can speak, read, and write Common, Dwarvish, Elvish, and Gnomish </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Sage Bond</span>
+                    <div class="dropdown-content">
+                        <p>My life's work is a series of tomes related to a specific field of lore. </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Sage Flaw</span>
+                    <div class="dropdown-content">
+                        <p>I am easily distracted by the promise of information.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Sage Personality Trait</span>
+                    <div class="dropdown-content">
+                        <p>There's nothing I like more than a good mystery. </p><br>
+                        <p> I am horribly, horribly awkward in social situations.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Sage Ideal</span>
+                    <div class="dropdown-content">
+                        <p>Knowledge. The path to power and self-improvement is through knowledge. (Neutral) </p>
+                    </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                    <span>Cloistered Scholar  </span>
+                    <div class="dropdown-content">
+                        <p>    As a child, you were inquisitive when your playmates were possessive or raucous. In your formative years, you found your way to one of Faerun's great institutes of learning , where you were apprenticed and taught that knowledge is a more valuable treasure than gold or gems. Now you are ready to leave your home- not to abandon it, but to quest for new lore to add to its storehouse of knowledge.</p><p>The most well known of Faerun's fonts of knowledge is Candlekeep. The great library is always in need of workers and attendants, some of whom rise through the ranks to assume roles of greater responsibility and prominence. You might be one of Candlekeep's own, dedicated to the curatorship of what is likely the most complete body of lore and history in all the world.</p><p>Perhaps instead you were taken in by the scholars of the Vault of the Sages or the Map House in Silverymoon, and now you have struck out to increase your knowledge and to make yourself available to help those in other places who seek your expertise. You might be one of the few who aid Herald's Holdfast, helping to catalogue and maintain records of the information that arrives daily from across Faerfin.</p>
+                        <b><p>Skill Proficiencies:</b> History, plus your choice of one from among Arcana, Nature, and Religion Languages: Two of your choice Equipment: The scholar's robes of your cloister, a writing kit (small pouch with a quill, ink, folded parchment, and a small penknife), a borrowed book on the subject of your current study, and a pouch containing 10 gp </p>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <h3>Class</h3>
+
+                    <div class="dropdown">
+                    <span>Tinker</span>
+                    <div class="dropdown-content">
+                        <p>You have proficiency with tinker's tools. Using those tools, you can spend 1 hour and 10 gp worth of materiaIs to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours. (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materiaIs used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:</p> 
+                        <p><b>Clockwork Toy:</b> This toy is a clockwork animal or person, such as a frog, mouse, bird, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.</p>
+                        <p><b>Fire Starter:</b> The device produces a miniature flame, which you can use to light something like a candle, torch, or campfire. Using the device requires your action.</p>
+                        <p><b>Music Box:</b> When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed. </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Tinker's Tools</span>
+                    <div class="dropdown-content">
+                        <p>Proficient with Artisan Tinker's Tools. </p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Magical Tinkering</span>
+                    <div class="dropdown-content">
+                        <p>At	1st	level,	you	learn	how	to	invest	a	spark	of	
+                    magic	in	objects	that	would	otherwise	be	
+                    mundane.	To	use	this	ability,	you	must	have	
+                    thieves’	tools,	tinker’s	tools,	or	other	artisan’s	
+                    tools	in	hand.	You	thentouch	a	Tiny	nonmagical	
+                    object	as	an	action	and	give	it	one	of	the	
+                    following	magical	properties	of	your	choice:
+                        <li>The	object	sheds	bright	light	in	a	5-foot	radius	
+                        and	dim	light	for	an	additional	5	feet.</li>
+                        <li>Whenever	tapped	by	a	creature,	the	object	
+                    emits	a	recorded	message	that	can	be	heard	up	
+                    to	10	feet	away.	You	utter	the	message	when	
+                    you	bestow	this	property	on	the	object,	and	
+                    the	recording	can	be	no	more	than	6	seconds	
+                        long.</li>
+                        <li>The	object	continuously	emits	your	choice	of	
+                    an	odor	or	a	nonverbal	sound	(wind,	waves, chirping,	or	the	like).	The	chosen	phenomenon	
+                        is	perceivable	up	to	10	feet	away.</li>
+                        <li>A	static	visual	effect	appears	on	one	of	the	
+                    object’s	surfaces.	This	effect	can	be	a	picture,	
+                    up	to	25	words	of	text,	lines	and	shapes,	or	a	
+                    mixture	of	these	elements,	as	you	like.</li><br>
+                    The	chosen	property	lasts	indefinitely.	As	an	
+                    action,	you	can	touch	the	object	and	end	the	
+                    property	early.<br>
+                    You	can	give	the	magic	of	this	feature	to  multiple	objects,	touching	one	object	each	time	
+                    you	use	the	feature,	and	a	single	object	can	bear	
+                    only	one	of	the	properties	at	a	time.	The	
+                    maximum	number	of	objects	you	can	affect	with	
+                    the	feature	at	one	time	is	equal	to	your	
+                    Intelligence	modifier	(minimum	of	one	object). If	
+                    you	try	to	exceed	your	maximum,	the	oldest	
+                    property immediately	ends,	and	then	the	new	
+                    property applies.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Ritual Casting</span>
+                    <div class="dropdown-content">
+                        <p>You	can	cast	an	artificer spell	as	a	ritual	if	that	
+                    spell	has	the	ritual	tag and	you	have	the	spell	
+                    prepared.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Spellcasting	Ability</span>
+                    <div class="dropdown-content">
+                        <p>Spell Save DC = 
+                        8 + your proficiency bonus + your
+                        Intelligence modifier</p>
+                        <p>Spell Attack DC = 
+                        your proficiency bonus + your
+                            Intelligence modifier</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Infuse Item</span>
+                    <div class="dropdown-content">
+                        <p>At	2nd	level,	you gain	the	ability	to	imbue	
+                    mundane	items	with	certain	magical	infusions.	
+                    The	magic	items	you	create	with	this	feature	are	
+                    effectively	prototypes	of	permanent	items.
+                        <h2>Infusions	Known</h2>
+                    When	you	gain	this	feature,	pick	three artificer	
+                    infusions	to	learn,	choosing	from	the	“Artificer	
+                    Infusions”	section	at	the	end	of	the	class’s	
+                    description.	You	learn	additional	infusions	of	
+                    your	choice	when	you	reach	certain	levels	in	this	
+                    class,	as	shown	in	the	Infusions	Known	column	
+                    of	the	Artificer	table.
+                    Whenever	you	gain	a	level	in	this	class,	you	can	
+                    replace	one	of	the	artificer	infusions	you	learned	
+                    with	a	new	one.
+                        <h2>Infusing	an	Item</h2>
+                    Whenever	you	finish	a	long	rest,	you	can	touch	a	
+                    nonmagical	object	and	imbue	it	with	one	of	your	
+                    artificer	infusions,	turning	it	into	a	magic	item.
+                    An infusion	works on only certain	kinds	of	
+                    objects,	as	specified	in	the	infusion’s description.
+                    If	the	item	requires	attunement,	you	can	attune	
+                    yourself	to	it	the	instant	you	infuse	the	item,	or	
+                    you	can	forgo	attunement	so	that	someone	else	
+                    can	attune to	the	item.	If	you	decide	to	attune	to	
+                    the	item	later,	you	must	do	so	using	the	normal
+                    process	for	attunement (see	“Attunement”	in	the	
+                    Dungeon	Master’s	Guide,	page	136).
+                    Your	infusion	remains	in	an	item	indefinitely,	
+                    but	when	you	die,	the	infusion	vanishes	after	a	
+                    number	of	days	have passed	equal	to	your	
+                    Intelligence	modifier	(minimum	of	1	day). The	
+                    infusion	also	vanishes	if	you	give	up	your	
+                    knowledge	of	the	infusion	for	another one.
+                    You	can infuse	more	than	one	nonmagical
+                    object	at	the	end	of	a	long	rest;	the	maximum	
+                    number	of	objects	appears in	the	Infused	Items	
+                    column	of	the	Artificer	table.	You	must	touch	
+                    each	of	the	objects,	and	each	of	your	infusions	
+                    can	be	in	only	one	object	at	a	time. If	you	try to	
+                    exceed	your	maximum number	of	infusions,	the	
+                    oldest	infusion	immediately	ends,	and	then	the	
+                    new	infusion	applies.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Tool Expertise</span>
+                    <div class="dropdown-content">
+                        <p>Starting	at	3rd	level,	your	proficiency	bonus	is	
+                    doubled	for	any	ability	check	you	make	that	uses	
+                    your	proficiency	with	a	tool.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Arcane Armament</span>
+                    <div class="dropdown-content">
+                        <p>Starting	at	5th	level,	you can	attack	twice,	rather	
+                    than	once,	whenever	you	take	the	Attack	action	
+                    on	your	turn,	but	one	of	the	attacks must	be	
+                    made	with	a	magic	weapon,	the	magic	of	which	
+                    you	use	to	propel	the	attack</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>The	Right	Cantrip	for	the	Job</span>
+                    <div class="dropdown-content">
+                        <p>At	10th	level,	you	gain	the	ability	to	make	sure	
+                    you	have	the	right	magical	tool	for	a	job.	
+                    Whenever	you	finish a	short	or	long	rest, you	can	
+                    replace	one	of	the	artificer	cantrips	you	know	
+                    with	another	cantrip	from	the	artificer	spell	list.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Tools	of	the	Trade</span>
+                    <div class="dropdown-content">
+                        <p>By	the	time	you	adopt	this	specialty	at	3rd	level,	
+                    you’re	deeply	familiar	with	employing	its	tools.
+                        <h2>Proficiencies</h2> You	gain	proficiency	with	
+                    alchemist’s	supplies and	the	herbalism	kit,	
+                    assuming	you	don’t	already	have	them. You	also	
+                    gain	alchemist’s	supplies	and	an	herbalism	kit	
+                    for	free—the	result	of	tinkering	you’ve	done	as	
+                    you’ve	prepared	for	this	specialization.
+                        <h2>Crafting</h2> If	you	craft	a	magic	item	in	the	potion	
+                    category,	it	takes	you	a	quarter	of	the	normal	
+                    time,	and	it	costs	you	half	as	much	of	the	usual	
+                    gold.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Alchemist	Spells</span>
+                    <div class="dropdown-content">
+                        <p>Starting	at	3rd	level,	you	always	have	certain	
+                    spells	prepared after you	reach	particular levels
+                    in	this	class,	as	shown	in	the	Alchemist	Spells	
+                    table.	These	spells count	as	artificer	spells	for	
+                    you,	but	they don’t count	against	the	number	of	
+                    artificer spells	you	prepare.</p>
+                        <table>
+                        <tr>
+                            <th>Artificer Levels</th>
+                            <th>Spells</th>
+                        </tr>
+                        <tr>
+                        <td>3rd</td>
+                        <td>Purify food and drink, ray of sickness</td>
+                        </tr>
+                        <tr>
+                        <td>5th</td>
+                        <td>Melf’s acid arrow, web</td>
+                        </tr>
+                        <tr>
+                        <td>9th</td>
+                        <td>create food and water, stinking cloud</td>
+                        </tr>
+                        <tr>
+                        <td>13th</td>
+                        <td>blight, death ward</td>
+                        </tr>
+                        </table>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Alchemical Homunculus</span>
+                    <div class="dropdown-content">
+                        <p>At	3rd	level, you	learn ancient	methods	for	
+                    magically	creating	a	special	homunculus that	is	
+                        formed	by alchemical	substances.</p>
+                    <p>Whenever	you	finish	a	long	rest	and	your	
+                    alchemist’s	supplies	are	with	you,	you	can	form	
+                    this	homunculus	in	an	unoccupied	space	within	
+                    5	feet	of	you. If	you	already	have	a	homunculus	
+                    from	this	feature,	the	first	one	immediately	dies.</p>
+                    <p>The	homunculus	is	friendly	to	you	and	your	
+                    companions,	and	it	obeys	your	commands.	See	
+                    this	creature’s	game	statistics	in	the	Alchemical	
+                    Homunculus	stat	block. You	determine	the	
+                    homunculus’s	appearance,	which	includes	wings	
+                    and bits	of	alchemical	equipment.	Some	
+                    alchemists	prefer	mechanical-looking	birds,	
+                    whereas	others	like	winged	vials	or	miniature	
+                    cauldrons.</p>
+                    <p>In	combat,	the	homunculus	shares	your	
+                    initiative	count,	but	it	takes	its	turn	immediately	
+                    after	yours.	The	only	action it	takes	on	its	turn	is	
+                    the	Dodge	action,	unless	you	take	a	bonus	action	
+                    on	your	turn	to	command	it	to	take	one	of	the	
+                    actions	in	its	stat	block	or	to	take	the	Dash,	
+                    Disengage,	or	Help	action.</p>
+                    <p>If	the	mending spell	is	cast on it,	it	regains 2d6
+                    hit	points.	If it has	died	within	the	last	hour,	you	
+                    can	use	your	alchemist’s	supplies as	an	action to	
+                    revive	it,	provided	you	are	within	5	feet	of	it	and	
+                    you	expend	a	spell	slot	of	1st	level	or	higher. The	
+                    homunculus	returns	to	life	with	all	its	hit	points	
+                    restored.</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Alchemical	Mastery</span>
+                    <div class="dropdown-content">
+                        <p>At	6th	level,	your	command	of	magical	chemicals	
+                    has	become	masterful,	enhancing	the	healing	
+                    and	damage	you	create	through them.	When	you	
+                    cast	a	spell	using	your	alchemist’s	supplies	as	the	
+                    spellcasting	focus,	you	gain	a	bonus	to	one	roll	of	
+                    the	spell.	That	roll	must	restore	hit	points	or	be	a	
+                    damage	roll	that	deals	acid	or	poison	damage,	
+                    and	the	bonus	equals	your	Intelligence	modifier	
+                        (minimum	of	+1).</p>
+                    <p>In	addition,	you	can	cast	lesser	restoration
+                    without	expending	a	spell	slot,	provided	you	use	
+                    alchemist’s	supplies	as	the	spellcasting	focus.	
+                    You	can	do	so	a	number	of	times	per	day	equal	to	
+                    your	Intelligence	modifier	(minimum	of	once)</p>
+                    </div>
+                    </div>
+
+                    <div class="dropdown">
+                    <span>Chemical	Savant</span>
+                    <div class="dropdown-content">
+                        <p>By	14th level, you	have	been	exposed	to so	many	
+                    chemicals	and	unlocked	their	secrets	that	they	
+                    pose	little	risk	to	you,	and	you	can	use	them	to	
+                    quickly	end	certain	ailments. You	gain	resistance	
+                    to	acid	damage	and	poison	damage,	and	you	are	
+                        now	immune	to	the	poisoned	condition.</p>
+                    <p>In	addition,	you	can	cast	greater restoration
+                    once	without	expending	a	spell	slot	and	without
+                    providing	the	material	component,	provided	you	
+                    use	alchemist’s	supplies	as	the	spellcasting	focus.
+                    You	regain	the	ability	to	do	so	when	you	finish	a	
+                    long	rest</p>
+                    </div>
+                    </div>
+                </div>
+                
+                
+                </div>
+
+
+                <!-- TabsDashboard -->
+                <p id="absOpen" class="tab">Abilities</p>
+                <p id="proOpen" class="tab">Proficiencies</p>
+                <p id="skillsOpen" class="tab">Skills</p>
+                <p id="inventoryOpen" class="tab">Inventory</p>
+                <p id="spellsOpen" class="tab">Spells</p>
+            </div>
+            </div>
+        </main>
+<script src="MyJava.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>
+  

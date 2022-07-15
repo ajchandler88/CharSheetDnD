@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body{
+    margin:0 auto;
+    background-image:url("/Assets/dndlogo.png"), url("Assets/parchment1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.more {
+    position: absolute;
+    height: fit-content;
+    width:500px;
+    top:10%;
+    left:40%;
+    border-bottom: red 10px double;
+    text-align:center;
+    justify-items:center;
+  }
+.more span{
+    font-size:56pt;
+    font-family: 'Pirata One', cursive;
+    color:white;
+    text-shadow: 5px 5px 5px black;
+}
+.box {
+    visibility: hidden;
+    position: absolute;
+    box-sizing:content-box;
+    left:-1px;
+    opacity:0;
+    height: fit-content;
+    width: 502px;
+    transition: opacity 3s ease;
+}
+.more:hover .box {
+    visibility: visible;
+    border:red 10px solid;
+    border-radius: 50px;
+    opacity:1;
+    background-color: rgba(0, 0, 0, .2);
+}
+.more:hover{
+    border:none;
+    transition: border 1s ease;
+}
+.box li{
+    list-style:none;
+    display:flex;
+    justify-items:center;
+    vertical-align:center;
+    transition: transform .5s;
+}
+.box li:hover{
+      transform: scale(1.1);
+}
+.box a{
+    display:flex;
+    font-size:36pt;
+    color:white;
+    text-decoration:none;
+    align-items:center;
+    
+}
+.box img{
+    padding:20px;
+}

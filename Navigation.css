@@ -1,0 +1,51 @@
+.nav-menu {
+    position: absolute;
+    box-sizing: border-box;
+    height: fit-content;
+    width:300px;
+    top:10px;
+    right:10px;
+    text-align: right;
+    justify-items:center;
+  }
+.sub-nav-menu {
+    visibility: hidden;
+    position: absolute;
+    box-sizing:content-box;
+    left:-1px;
+    opacity:0;
+    height: fit-content;
+    width: 302px;
+    transition: opacity 2s ease;
+    z-index:10;
+}
+.nav-menu:hover .sub-nav-menu {
+    visibility: visible;
+    border-radius: 50px;
+    opacity:1;
+    background-color: rgba(0, 0, 0, .6);
+}
+.nav-menu:hover{
+    border:none;
+    transition: border 1s ease;
+}
+.sub-nav-menu li{
+    list-style:none;
+    display:flex;
+    justify-items:center;
+    vertical-align:center;
+    transition: transform .5s;
+}
+.sub-nav-menu li:hover{
+      transform: scale(1.1);
+}
+.sub-nav-menu a{
+    display:flex;
+    font-size:36pt;
+    color:white;
+    text-decoration:none;
+    align-items:center;
+}
+.sub-nav-menu a:hover{
+    color:red;
+}

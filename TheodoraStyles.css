@@ -1,0 +1,346 @@
+/*1*/@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/*2*/@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*3*/@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+/*4*/@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+/*5*/@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+/*6*/@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+/*7*/@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+/*8*/@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+/*9*/@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+/*10*/@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/*11*/@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+/*12*/@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/*
+.one{font-family: 'Great Vibes', cursive;}
+.two{font-family: 'Parisienne', cursive;}
+.three{font-family: 'Pirata One', cursive;}
+.four{font-family: 'Homemade Apple', cursive;}
+.five{font-family: 'Marck Script', cursive;}
+.six{font-family: 'Tangerine', cursive;}
+.seven{font-family: 'Alex Brush', cursive;}
+.eight{font-family: 'Mr Dafoe', cursive;}
+.nine{font-family: 'Mrs Saint Delafield', cursive;}
+.ten{font-family: 'Rock Salt', cursive;}
+.eleven{font-family: 'Schoolbell', cursive;}
+.twelve{font-family: 'Gloria Hallelujah', cursive;}
+*/
+
+body{
+  margin:0 auto;
+  background-image:url("/Assets/dndlogo.png"), url("Assets/parchment1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main{
+  margin:0;
+  box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  box-shadow: inset 0 0 5px black; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 20px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+input{background-color: rgba(255,255,255,.2);}
+h1{
+  text-shadow: 5px 5px 5px black;
+  font-size:46pt;
+  text-align:center;
+  margin:0 auto;
+  margin-bottom:5%;
+  border-bottom: white solid 2px;
+  width:fit-content;
+}
+input{
+  width:100px;
+  text-align: center;
+  font-family: 'Parisienne', cursive;
+  color:maroon;
+  font-size:26pt;
+  font-weight: 800;
+  text-shadow: none;
+}
+h1::first-letter{
+  font-size:76pt;
+}
+
+
+
+/*TopMenu*/
+.icon{
+  height:12vw;
+}
+#topMenu{
+  position:fixed;
+  display: inline-block;
+  top:0;
+  height: 300px;
+  width: 100%;
+}
+*{
+  text-decoration: 2px 2px 2px black;
+  font-family: 'Pirata One', cursive;
+  font-size:26;
+  letter-spacing: 2px;
+}
+#Info{
+  display:grid;
+  box-sizing:border-box;
+  top:0;
+  right:0;
+  height:300px;
+  width:90%;
+  position:fixed;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  min-width: 400px;
+  overflow:auto;
+}
+article{display: inline-block;}
+p{
+  margin:0;
+}
+.label{
+  padding:0;
+  display: block;
+  text-align:center;
+  border:none;
+  font-size: 26pt;
+  color:rgba(40, 40, 40, .9);
+}
+.inputNumber{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border:none;
+  text-shadow: 1px 1px 1px black;
+  font-size:32pt;
+  color:maroon;
+}
+.inputWord{
+  display: block;
+  text-align:center;
+  border:none;
+  text-shadow: 1px 1px 1px black;
+  font-size: 32pt;
+  color:maroon;
+  letter-spacing: normal;
+}
+.inputWord::first-letter{
+  font-size:40pt;
+}
+
+
+
+
+/*TabsDashboard*/
+#DropUp {
+  position:fixed;
+  bottom:-20px;
+  width: 100%;
+}
+.tab{
+  position: relative;
+  display: inline-block;
+  bottom:-20px;  
+  margin: 0;
+  background-image:url("Assets/parchment.jpg");
+  height:120px;
+  cursor: zoom-in;
+  font-size: 2.5vw;
+  padding: 0px;
+  width: 19.5%;
+  overflow:auto;
+  text-align:center;
+  align-content: center;
+  opacity:.8;
+  border-top-left-radius: 400px;
+  border-top-right-radius: 400px;
+  color:white;
+  box-shadow: 10px 10px 20px black;
+  text-shadow: 5px 5px 5px black;
+  transition: bottom .5s;
+}
+.tab p{
+  padding-top:100px;
+  text-decoration: underline;
+}
+.active, .tab:hover {
+  opacity:1;
+  bottom:0;
+  height:120px;
+}
+.full{
+  margin:0 auto -100px auto;
+  box-sizing:border-box;
+  background-image:url("Assets/parchment.jpg");
+  width:98%;
+  height:40vw;
+  text-align:left;
+  font-size: 23px;
+  padding: 30px 0 200px;
+  text-decoration: none;
+  overflow:overlay;
+  overflow-y: scroll;
+}
+.full h1{
+  color:white;
+}
+.full h2, h3{
+  color:black;
+}
+
+
+
+
+
+                          /*TabsSpecifics*/
+
+/*Abilities*/
+#absFull{
+  display: none;
+}
+/*Profiencies*/
+#proFull{
+  display: none;
+}
+.full>table{
+  margin:0 auto;
+  padding:120px;
+  border-radius:30%;
+  box-shadow:10px 10px 20px black;
+  background-color:rgba(0,0,0,.2);
+}
+.full>table>tr,th,td{
+  color: white;
+  border:1px solid black;
+  text-align:center;
+}
+.full>table>tr,th{
+  background-color:black;
+  font-size:22pt;
+  text-decoration: none;
+  font-style: normal;
+}
+.full>table>tr,td{
+  font-size:22pt;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Skills*/
+#skillsFull {
+  display: none;
+  font-size:36pt;
+}
+#skillsFull>table>td{
+  font-size: 36pt;
+}
+
+/*Inventory*/
+#inventoryFull{
+  display: none;
+}
+#inventoryGrid {
+  display:grid;
+  margin:0 auto;
+  grid-template-columns:1fr 1fr;
+  width: 70%;
+  grid-gap:20px;
+  font-size:12pt;
+  overflow:auto;
+}
+#inventoryFull h2{
+  color:white;
+}
+
+/*Spells*/
+#spellsFull{
+  display: none;
+  color: transparent;
+}
+.specQual{
+  margin:0 auto;
+  box-sizing:border-box;
+  display:inline-block;
+  text-align:center;
+  width:50%;
+}
+.dropdown {
+  position: static;
+  display: block;
+  margin:0 auto;
+  width:92%;
+  color:white;
+  font-size:22pt;
+  padding:10px;
+}
+.dropdown:hover span{
+  background-color: rgba(0,0,0,.7);
+  -webkit-text-fill-color: rgba(0, 0, 0, 1);
+  background:none;
+  border:black solid 1px;
+  border-radius:50%;
+  padding:10px;
+}
+.dropdown span{
+  color:black;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, .5);
+}
+@keyframes animate {
+  0% {
+    background-position: -3000%;
+  }
+  100% {
+    background-position: 3000%;
+  }
+}
+.dropdown-content {
+  position: fixed;
+  display: none;
+  box-sizing: border-box;
+  width:50%;
+  right:2%;
+  bottom:100px;
+  border-radius:100px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height:fit-content;
+}
+.dropdown-content::after{
+  display: flex;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+  background-color: rgba(20,20,20, .7);
+  padding:30px;
+  height:23vw;
+  line-height:1.5;
+  text-align:left;
+  overflow:auto;
+}
+
+/*-----------------------------------------------------------*/
